@@ -1,0 +1,257 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_image",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_target",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "createCampaign",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_idx",
+						"type": "uint256"
+					}
+				],
+				"name": "fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllCampaign",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "image",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "target",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "totalRaised",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "currentBalance",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "address[]",
+								"name": "donators",
+								"type": "address[]"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "donation",
+								"type": "uint256[]"
+							}
+						],
+						"internalType": "struct CrowdFunding.Campaign[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_idx",
+						"type": "uint256"
+					}
+				],
+				"name": "getAllDonators",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "intToCampaign",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "image",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "target",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "totalRaised",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "currentBalance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "numberOfCampaign",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_idx",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/crowdFunding.sol": "CrowdFunding"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/crowdFunding.sol": {
+			"keccak256": "0x172a49c4ef8a7e988852240ec618608e8ac83a016daf825a02e835fe33b748bf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7d78e798eaae6f6869da3919ab32b08c42fcd1d85619e854540b2db04384399c",
+				"dweb:/ipfs/QmRyPadZ2fT188i1uwq27kLHUCz6zJQYNXp6Him8qqPgTj"
+			]
+		}
+	},
+	"version": 1
+}
